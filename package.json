@@ -1,6 +1,6 @@
 {
   "name": "@lengz/npm-typescript-greeter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Boilerplate for npm package with typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
