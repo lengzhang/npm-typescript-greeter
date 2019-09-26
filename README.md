@@ -90,7 +90,7 @@ npm init --y
   }
   ```
 
-  |               |                                                                                                                                                                                                               |
+  | Option        | Description                                                                                                                                                                                                   |
   | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | `target`      | We want to compile to `es5` since we want to build a package with browser compatibility.                                                                                                                      |
   | `module`      | Use commonjs for compatibility.                                                                                                                                                                               |
@@ -177,7 +177,7 @@ npm init --y
   }
   ```
 
-  |          |                              |
+  | Script   | Description                  |
   | -------- | ---------------------------- |
   | `format` | format your code by prettier |
   | `lint`   | run tslint                   |
@@ -252,7 +252,7 @@ cd src touch index.ts
   }
   ```
 
-  |         |                          |
+  | Script  | Description              |
   | ------- | ------------------------ |
   | `start` | developing in watch mode |
   | `build` | build your project       |
@@ -291,7 +291,7 @@ cd src touch index.ts
   }
   ```
 
-  |        |               |
+  | Script | Description   |
   | ------ | ------------- |
   | `test` | run unit test |
 
@@ -326,7 +326,7 @@ cd src touch index.ts
 }
 ```
 
-|                  |                                                                                               |
+| Script           | Description                                                                                   |
 | ---------------- | --------------------------------------------------------------------------------------------- |
 | `prepare`        | `prepare` will run both BEFORE the package is packed and published, and on local npm install. |
 | `prepublishOnly` | `prepublishOnly` will run BEFORE prepare and ONLY on `npm publish`.                           |
@@ -345,7 +345,7 @@ cd src touch index.ts
 }
 ```
 
-|               |                                                                          |
+| Script        | Description                                                              |
 | ------------- | ------------------------------------------------------------------------ |
 | `name`        | your package name, it will show in npm                                   |
 | `description` | about your package                                                       |
@@ -428,24 +428,24 @@ npm publish --access public
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "increase-version": "npm version patch",
+    "bump-version": "npm version patch",
     "publish-public": "npm publish --access public"
   }
 }
 ```
 
-|                    |                                                                                               |
-| ------------------ | --------------------------------------------------------------------------------------------- |
-| `start`            | developing in watch mode                                                                      |
-| `build`            | build your project                                                                            |
-| `format`           | format your code by prettier                                                                  |
-| `lint`             | run tslint                                                                                    |
-| `commit`           |                                                                                               |
-| `test`             | run unit test                                                                                 |
-| `prepare`          | `prepare` will run both BEFORE the package is packed and published, and on local npm install. |
-| `prepublishOnly`   | `prepublishOnly` will run BEFORE prepare and ONLY on `npm publish`.                           |
-| `preversion`       | `preversion` will run before bumping a new package version.                                   |
-| `version`          | `Version` will run after a new version has been bumped.                                       |
-| `postversion`      | `Postversion` will run after the commit has been made.                                        |
-| `increase-version` | bump a new patch version of the package                                                       |
-| `publish-public`   | publishing a public scoped package                                                            |
+| Script           | Description                                                                                   |
+| ---------------- | --------------------------------------------------------------------------------------------- |
+| `start`          | developing in watch mode                                                                      |
+| `build`          | build your project                                                                            |
+| `format`         | format your code by prettier                                                                  |
+| `lint`           | run tslint                                                                                    |
+| `commit`         |                                                                                               |
+| `test`           | run unit test                                                                                 |
+| `prepare`        | `prepare` will run both BEFORE the package is packed and published, and on local npm install. |
+| `prepublishOnly` | `prepublishOnly` will run BEFORE prepare and ONLY on `npm publish`.                           |
+| `preversion`     | `preversion` will run before bumping a new package version.                                   |
+| `version`        | `Version` will run after a new version has been bumped.                                       |
+| `postversion`    | `Postversion` will run after the commit has been made.                                        |
+| `bump-version`   | bump a new patch version of the package                                                       |
+| `publish-public` | publishing a public scoped package                                                            |
