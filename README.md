@@ -66,15 +66,19 @@ npm init --y
 
 ### 4. Install `typescript`
 
-- #### install as DevDependency
+- install as DevDependency
+
   ```
   npm install --save-dev typescript
   ```
-- #### init `tsconfig`
+
+- init `tsconfig`
+
   ```
   tsc --init
   ```
-- #### modify `.tsconfig.json`
+
+- modify `.tsconfig.json`
 
   ```json
   {
@@ -101,13 +105,13 @@ npm init --y
 
 ### 5. Formatting and Linting
 
-- #### install `prettier`, `tslint`, and `tslint-config-prettier` as DevDependency
+- install `prettier`, `tslint`, and `tslint-config-prettier` as DevDependency
 
   ```
   npm install --save-dev prettier tslint tslint-config-prettier
   ```
 
-- #### create `tslint.json`
+- create `tslint.json`
 
   ```json
   {
@@ -124,7 +128,7 @@ npm init --y
   }
   ```
 
-- #### create `.prettierrc`
+- create `.prettierrc`
 
   ```json
   {
@@ -145,7 +149,7 @@ npm init --y
   }
   ```
 
-- #### create `.editorconfig`
+- create `.editorconfig`
 
   ```
   # EditorConfig is awesome: https://EditorConfig.org
@@ -166,7 +170,7 @@ npm init --y
   indent_size = 2
   ```
 
-- #### add `npm scripts`
+- add `npm scripts`
 
   ```json
   {
@@ -186,11 +190,11 @@ npm init --y
 
 > Hook will run `npm test` before `git commit` and `git push`
 
-- #### install
+- install
 
-  ```
-  npm install --save-dev husky @commitlint/config-conventional @commitlint/cli commitizen cz-conventional-changelog
-  ```
+```
+npm install --save-dev husky @commitlint/config-conventional @commitlint/cli commitizen cz-conventional-changelog
+```
 
 - ### create `commitlint.config.js`
 
@@ -217,7 +221,7 @@ npm init --y
   { "path": "cz-conventional-changelog" }
   ```
 
-- #### add `npm scripts`
+- add `npm scripts`
 
   ```json
   {
@@ -241,7 +245,7 @@ cd src touch index.ts
   export const Greeter = (name: string) => `Hello ${name}`;
   ```
 
-- #### add `npm scripts`
+- add `npm scripts`
 
   ```json
   {
@@ -252,10 +256,10 @@ cd src touch index.ts
   }
   ```
 
-  | Script  | Description              |
-  | ------- | ------------------------ |
-  | `start` | developing in watch mode |
-  | `build` | build your project       |
+| Script  | Description              |
+| ------- | ------------------------ |
+| `start` | developing in watch mode |
+| `build` | build your project       |
 
 ### 8. ignore build folder
 
@@ -265,11 +269,11 @@ cd src touch index.ts
 
 ### 9. Unit Test
 
-- #### install as DevDependency
+- install as DevDependency
 
-  `npm install --save-dev jest ts-jest @types/jest`
+`npm install --save-dev jest ts-jest @types/jest`
 
-- #### create `jestconfig.json`
+- create `jestconfig.json`
 
   ```json
   {
@@ -281,7 +285,7 @@ cd src touch index.ts
   }
   ```
 
-- #### add `npm scripts`
+- add `npm scripts`
 
   ```json
   {
@@ -297,7 +301,7 @@ cd src touch index.ts
 
 ### 10. Write Unit Test
 
-- #### add `__tests__` folder into `src` for unit test files, and add `Greeter.test.ts`
+- add `__tests__` folder into `src` for unit test files, and add `Greeter.test.ts`
 
   ```ts
   import { Greeter } from "../index";
@@ -306,7 +310,7 @@ cd src touch index.ts
   });
   ```
 
-- #### run test
+- run test
 
   ```
   npm test
@@ -392,7 +396,7 @@ npm publish
 
 ### 16. Publishing a Scoped Package
 
-- #### Creating a New Scoped Package
+- Creating a New Scoped Package
 
   ```
   npm init --scope=<org_scope>
@@ -402,15 +406,15 @@ npm publish
 
 - ### Publishing a Private Scoped Package
 
-```
-npm publish
-```
+  ```
+  npm publish
+  ```
 
 - ### Publishing a Public Scoped Package
 
-```
-npm publish --access public
-```
+  ```
+  npm publish --access public
+  ```
 
 ## `npm scripts`
 
