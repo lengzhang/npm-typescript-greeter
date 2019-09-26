@@ -453,3 +453,9 @@ npm publish
 | `postversion`    | `Postversion` will run after the commit has been made.                                        |
 | `bump-version`   | bump a new patch version of the package                                                       |
 | `publish-public` | publishing a public scoped package                                                            |
+
+# References
+
+- [在 2018 年如何优雅的开发一个 typescript 语言的 npm 包？](https://juejin.im/post/5bfcb87ce51d45378d0d28d8#heading-15)
+- [Step by step: Building and publishing an NPM Typescript package.](https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c)
+- [npm 发布以@开头命名的 public 公有包！！！](https://blog.csdn.net/u013727805/article/details/80849329)
